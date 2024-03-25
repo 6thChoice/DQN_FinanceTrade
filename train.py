@@ -21,7 +21,7 @@ Initial_amount = 1000
 
 REWARD_BUFFER = np.empty(shape=EPOCH)
 
-file = pd.read_csv("D:\PyCharm Community Edition 2022.1.2\Binance\BTCUSDT-15m-2017-2024.csv")
+file = pd.read_csv("BTCUSDT-1d-2017-2024.csv")
 file1 = file.iloc[:5000,:]
 state_col = ['open', 'high', 'low', 'close', 'volume', 'close_time', 'quote_volume', 'count', 'taker_buy_volume', 'taker_buy_quote_volume','MeanPrice', 'K','D','J']
 agent = Agent(input_n=feature_in,output_n=action_number,memory_size=MEMO_SIZE)
